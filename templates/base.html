@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <!-- Link para o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Portfólio</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Seção de Perfil -->
+        <section class="profile row justify-content-center">
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='images/my-photo.jpeg') }}" alt="Minha Foto" class="profile-pic img-fluid rounded-circle">
+            </div>
+        </section>
+
+        <!-- Seção Sobre Mim -->
+        <section class="about-me row">
+            <div class="col">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Meu nome é Lucas Granzotti e sou um estudante na área de Tecnologia da Informação</p>
+            </div>
+        </section>
+
+        <!-- Seção de Projetos -->
+        <section class="projects row">
+            <div class="col-md-6">
+                <div class="project card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">1º Projeto: Desenvolver Sistema de Arduino</h3>
+                        <p class="card-text">Desenvolvi um projeto da criação de um carro e automatizei pelo arduino</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">2º Projeto: Robótica e Sistema Smart Embarcados IOT</h3>
+                        <p class="card-text">Criei um projeto de uma casa iteligente, controlada via bluetooth</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title"> 3º Projeto: API de Solo</h3>
+                        <p class="card-text">Criei um projeto de medição de temperatura e condição do solo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">3º Projeto: Registro de Usuários</h3>
+                        <p class="card-text">Desenvolvi uma criação de registros de usuários</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section class="contact row">
+            <div class="col">
+                <h2>Contato</h2>
+                <p>E-mail: lucg1404@gmail.com</p>
+                <p>Github: <a href="https://github.com/lucasgranzotti" target="_blank">LucasGranzotti</a></p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Link para o Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
